@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Pin Tab Keyboard Shortcut",
+    "version": "1.0",
+  
+    "description": "Pin a tab using a keyboard shortcut",
+  
+    "permissions": ["tabs"],
+
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["pin.js"]
+      }
+    ],
+
+    "background": {
+        "scripts": ["background-script.js"]
+    }
+}
